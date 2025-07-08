@@ -8,11 +8,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "@types/node": "^24.0.10",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@types/readline-sync": "^1.4.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulVieira007/Projeto_Conta_Bancaria.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RaulVieira007/Projeto_Conta_Bancaria/issues"
+  },
+  "homepage": "https://github.com/RaulVieira007/Projeto_Conta_Bancaria#readme",
+  "description": ""
 }
