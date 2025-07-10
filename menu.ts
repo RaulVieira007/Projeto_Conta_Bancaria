@@ -1,7 +1,8 @@
 import readlinesync = require("readline-sync");
-import { colors } from './src/util/Colors';
+import { colors } from "./src/util/colors";
 import { Conta } from "./src/util/model/conta";
-
+import { ContaCorrente } from "./src/util/model/contaCorrente";
+import { ContaPoupanca } from "./src/util/model/contaPoupanca";
 export function main(): void {
     let opcao: number;
 
@@ -12,8 +13,23 @@ export function main(): void {
     conta.depositar(5000);
     conta.visualizar();
 
+    const Contacorrente: ContaCorrente = new ContaCorrente (2, 123 , 1, "Mariana", 15000, 1000);
+    Contacorrente.visualizar();
+    Contacorrente.sacar(2000);
+    Contacorrente.visualizar();
+    Contacorrente.depositar(1000);
+    Contacorrente.visualizar();
+
+    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 2, "Victor", 1000, 10);
+    contapoupanca.visualizar();
+    contapoupanca.sacar(200);
+    contapoupanca.visualizar();
+    contapoupanca.depositar(1000);
+    contapoupanca.visualizar();
+
+
     while (true) {
-        console.clear(); // limpa o terminal
+        // console.clear(); // limpa o terminal
 
         // Menu com cores
         console.log(colors.bg.black, colors.fg.yellow);
@@ -80,12 +96,12 @@ export function main(): void {
 
             case 8:
                 console.log(colors.fg.whitestrong, "\n\nTransferência entre Contas\n\n", colors.reset);
-                const conta = readlinesync.questionInt("Digite o número da conta: ");
+                const conta5 = readlinesync.questionInt("Digite o número da conta: ");
                 const valor = readlinesync.questionInt("Digite o valor: ");
-                console.log(`Transferindo R$ ${valor} para a conta ${conta}`);
+                console.log(`Transferindo R$ ${valor} para a conta ${conta5}`);
                 const confirmar = readlinesync.question("Deseja confirmar a operação (S/N): ");
                 if (confirmar.toLowerCase() === "s") {
-                    console.log(`Transferência realizada com sucesso. \nConta:${conta} \nValor:R$${valor}`);
+                    console.log(`Transferência realizada com sucesso. \nConta:${conta5} \nValor:R$${valor}`);
                 } else {
                     console.log("Operação cancelada.");
                 }
