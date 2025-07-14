@@ -1,4 +1,4 @@
-import { Conta } from "./Conta";
+import { Conta } from "./conta";
 export class ContaCorrente extends Conta {
 
     private _limite: number;

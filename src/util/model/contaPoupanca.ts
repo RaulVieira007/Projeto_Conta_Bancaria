@@ -1,4 +1,4 @@
-import { Conta } from "./Conta";
+import { Conta } from "./conta";
 
 export class ContaPoupanca extends Conta {
 
