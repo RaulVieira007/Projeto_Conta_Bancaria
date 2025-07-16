@@ -1,4 +1,6 @@
-import { Conta } from "./conta";
+import { Conta } from "../model/Conta";
+
+
 
 export class ContaPoupanca extends Conta {
 

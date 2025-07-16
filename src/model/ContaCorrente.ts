@@ -1,4 +1,6 @@
-import { Conta } from "./conta";
+import { Conta } from "../model/Conta";
+
+
 export class ContaCorrente extends Conta {
 
     private _limite: number;
