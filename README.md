@@ -14,8 +14,6 @@ Projeto desenvolvido durante o curso na Generation, simulando um sistema bancár
 1. Instale as dependências: npm install
 2. Execute o projeto: ts-node menu.ts
 
-<img width="758" height="574" alt="image" src="https://github.com/user-attachments/assets/5f99d85a-6d5b-43c6-b568-28c3879ed944" />
-
 ## Exemplo da interface:
 
 <p align="center">
